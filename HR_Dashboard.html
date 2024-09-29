@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR-->
+    <nav id="navbar" class="navbar navbar-expand-lg bg-white fixed-top">
+        <div class="container px-5">
+            <a class="navbar-brand" href="index.html">Ahmed El-Gezery</a>
+            <button class="navbar-toggler border-0 outline-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto me-5">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link" aria-current="page" href="index.html #Portfolio">Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--Content-->
+    <section style="margin-top: 5rem;">
+
+        <!--Introduction to the all projects-->
+        <div class="container d-flex flex-column justify-content-center px-3 px-md-5 mb-5">
+            <h1 class="h5 text-center mb-4">Project Introduction: A Data Analyst's Journey</h1>
+            <p class="lead text-center">In this series, we'll follow the journey of a data analyst hired at a company
+                that previously did not have a data analyst. Together, we’ll uncover insights and work through the
+                following three key steps:</p>
+            <ol class="list-group mb-4 list-group-numbered">
+                <li class="list-group-item">Create a summary dashboard (Overview).</li>
+                <li class="list-group-item">Develop one or two detailed dashboards.</li>
+                <li class="list-group-item">Showcase important insights and track key costs and KPIs in relevant
+                    departments.</li>
+            </ol>
+            <p class="text-muted text-center"><em>This approach closely mirrors my actual experience.</em></p>
+            <p class="text-center">For this project, I will be using simulated data.</p>
+            <p class="fw-bold text-center">Note:</p>
+            <p class="text-center">All companies' data are <strong>confidential</strong> by default, and as such, I
+                cannot use any real company data. However, if you are aware of any freely available online datasets,
+                feel free to share!</p>
+        </div>
+
+        <!-- HR Dashboard -->
+        <div class="container d-flex flex-column justify-content-center px-3 px-md-5 mb-5">
+            <h2 class="h5 text-center mb-4">HR Dashboard (Project 1)</h2>
+            <p class="lead text-center">In this project, I developed an HR Dashboard to help track employee data, key
+                metrics, and performance indicators. The goal was to create a clear and insightful overview of the HR
+                department's activities, ensuring better decision-making and performance tracking.</p>
+
+            <h3>Goals:</h3>
+            <ol class="list-group mb-4 list-group-numbered">
+                <li class="list-group-item">Create a Summary Dashboard to Show an Overview of the HR Department in a
+                    Retail Company Using Available Data.</li>
+                <li class="list-group-item">Create an Active Headcount & HR Operations Dashboard to Track and Identify
+                    Any Issues in the Process.</li>
+                <li class="list-group-item">Create an Attrition Dashboard to Identify Reasons for Employee Turnover and
+                    Assess if We Are on the Right Track.</li>
+            </ol>
+
+            <h3>Tools used:</h3>
+            <ol class="list-group mb-4 list-group-numbered">
+                <li class="list-group-item"><strong>Excel</strong>: For exploring and analyzing the initial data.</li>
+                <li class="list-group-item"><strong>Python (Pandas)</strong>: To clean and manipulate the dataset.</li>
+                <li class="list-group-item"><strong>Power BI</strong>: For creating detailed and interactive
+                    visualizations.</li>
+            </ol>
+            <!--  <blockquote class="blockquote text-center">
+                <p>We can use other tools that will achieve the same result, such as <strong>SQL, Tableau</strong>.</p>
+            </blockquote>-->
+        </div>
+
+        <!-- Summary -->
+        <div class="container d-flex flex-column justify-content-center px-3 px-md-5 mb-5">
+            <h2 class="h5 text-center mb-4">HR Dashboard: Summary</h2>
+            <p class="lead text-center">This dashboard presents key metrics providing an overview of the HR department.
+                It highlights important areas without going too deep into specific problems, allowing for quick
+                identification of trends and possible challenges.</p>
+
+            <h3>Key Questions</h3>
+            <ol class="list-group mb-4 list-group-numbered">
+                <li class="list-group-item"><strong>Q1:</strong> What is the current size of the company’s workforce?
+                </li>
+                <li class="list-group-item"><strong>Q2:</strong> How experienced is the employee base?</li>
+                <li class="list-group-item"><strong>Q3:</strong> Is social insurance being effectively managed?</li>
+                <li class="list-group-item"><strong>Q4:</strong> What is the company’s gender distribution, and what
+                    trends are appearing?</li>
+                <li class="list-group-item"><strong>Q5:</strong> What is the attrition rate, its type, and the related
+                    trend?</li>
+            </ol>
+            <p class="text-center"><img src="./Img/HR_Dashboard_1.png" alt="image" class="img-fluid"></p>
+        </div>
+
+        <!-- Active HC & Operations -->
+        <div class="container d-flex flex-column justify-content-center px-3 px-md-5 mb-5">
+            <h2 class="h5 text-center mb-4">HR Dashboard: Active HC & Operations</h2>
+            <p class="lead text-center">This dashboard is designed to provide insights into the company’s active
+                headcount and HR operations. It reviews gender distribution to identify any imbalances, analyzes the
+                distribution of experienced employees across stores, and tracks the number of new hires.</p>
+
+            <h3>Key Questions</h3>
+            <ol class="list-group mb-4 list-group-numbered">
+                <li class="list-group-item"><strong>Q1:</strong> Is there an imbalance in gender distribution across
+                    stores?</li>
+                <li class="list-group-item"><strong>Q2:</strong> What is the distribution of experienced employees in
+                    the stores?</li>
+                <li class="list-group-item"><strong>Q3:</strong> How many new employees have joined our stores?</li>
+            </ol>
+            <p class="text-center"><img src="./Img/HR_Dashboard_2.png" alt="image" class="img-fluid"></p>
+
+            <h3>More questions for upgrading the dashboard or creating reports to answer:</h3>
+            <ol class="list-group mb-4 list-group-numbered">
+                <li class="list-group-item"><strong>Q1:</strong> Do experienced employees exceed our sales targets?</li>
+                <li class="list-group-item"><strong>Q2:</strong> How many employees are ready for promotion to leader or
+                    manager?</li>
+                <li class="list-group-item"><strong>Q3:</strong> What are the real reasons new hires fail during the
+                    probation period?</li>
+                <li class="list-group-item"><strong>Q4:</strong> Why is the number of employees who resigned but remain
+                    insured for over three months so high?</li>
+            </ol>
+        </div>
+
+        <!-- Attrition -->
+        <div class="container d-flex flex-column justify-content-center px-3 px-md-5 mb-5">
+            <h2 class="h5 text-center mb-4">HR Dashboard: Attrition</h2>
+            <p class="lead text-center">This dashboard is designed to provide insights into employee attrition trends.
+                It tracks the reasons behind turnover, highlights the stores with the highest turnover rates, and
+                differentiates between types of turnover, both overall for the company and for each store.</p>
+
+            <h3>Key Questions</h3>
+            <ol class="list-group mb-4 list-group-numbered">
+                <li class="list-group-item"><strong>Q1:</strong> What is the attrition rate?</li>
+                <li class="list-group-item"><strong>Q2:</strong> What is the current turnover trend?</li>
+                <li class="list-group-item"><strong>Q3:</strong> Which stores are experiencing turnover problems?</li>
+                <li class="list-group-item"><strong>Q4:</strong> Why are employees leaving?</li>
+                <li class="list-group-item"><strong>Q5:</strong> How are employees leaving the company (voluntary or
+                    involuntary)?</li>
+                <li class="list-group-item"><strong>Q6:</strong> What is the percentage of fraud cases in the company?
+                </li>
+            </ol>
+            <p class="text-center"><img src="./Img/HR_Dashboard_3.png" alt="image" class="img-fluid"></p>
+
+            <h3>More questions for upgrading the dashboard or creating reports to answer:</h3>
+            <ol class="list-group mb-4 list-group-numbered">
+                <li class="list-group-item"><strong>Q1:</strong> Why is the turnover trend not stable?</li>
+                <li class="list-group-item"><strong>Q2:</strong> Why is the percentage of involuntary turnover very
+                    high?</li>
+                <li class="list-group-item"><strong>Q3:</strong> Why is the percentage of fraud cases very high?</li>
+                <li class="list-group-item"><strong>Q4:</strong> Why do 61% of employees not provide a reason for
+                    leaving the company?</li>
+            </ol>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <!-- Contact-->
+    <section id="Contact" class="text-center py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="mb-4">Contact Me</h2>
+            <p class="mb-5">Feel free to reach out to me through LinkedIn</p>
+            <div class="row">
+                <!-- LinkedIn Card -->
+                <div class="">
+                    <div class="card bg-secondary border-light shadow-sm">
+                        <div class="card-body" style=" background-color: white;">
+                            <h5 class="card-title"><i class="fab fa-linkedin"></i> LinkedIn</h5>
+                            <p class="card-text">Connect with me on LinkedIn.</p>
+                            <a href="https://www.linkedin.com/in/ahmedelgezery" class="btn btn-dark" target="_blank">
+                                Visit LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Email Card -->
+                <div class="col-md-6 mb-4" style="display: none;">
+                    <div class="card bg-secondary border-light shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-envelope"></i> Email</h5>
+                            <p class="card-text">Drop me an email for any inquiries or collaboration.</p>
+                            <a id="emailButton" href="" class="btn btn-light">
+                                Send Email
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

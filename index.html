@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed El-Gezery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalLabel">Hello There!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Thank you for visiting my portfolio. It is currently under development,
+                    but you can explore various projects that showcase my <b>analytical thinking</b> and <b>data
+                        visualization</b>
+                    skills.
+                    As you browse, you'll get a sense of my <b>experience</b> and capabilities in various tools.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR-->
+    <nav id="navbar" class="navbar navbar-expand-lg bg-white fixed-top">
+        <div class="container px-5">
+            <a class="navbar-brand" href="#Home">Ahmed El-Gezery</a>
+            <button class="navbar-toggler border-0 outline-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto me-5">
+                    <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                    <a class="nav-link" aria-current="page" href="#About">About</a>
+                    <a class="nav-link" href="#Experience">Experience</a>
+                    <a class="nav-link" href="#Portfolio">Portfolio</a>
+                    <a class="nav-link" href="#Contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Intro-->
+    <div class="container-fluid vh-100 d-flex align-items-center justify-content-center mt-4" id="Home">
+        <div class="row w-100 justify-content-center text-center align-items-center text-md-left">
+
+            <div class="col-md-3 mb-5 d-flex justify-content-center">
+                <img src="./Img/My Pic.jpg" alt="Profile" class="img-fluid rounded-circle"
+                    style="width: 300px; height: 290px; object-fit: cover;">
+            </div>
+
+
+            <div class="col-md-4">
+                <p class="text-muted fw-bold mb-0">Hello I'm</p>
+                <h1 class="fw-bold">Ahmed El-Gezery</h1>
+                <h3 class="text-muted mb-3">Data Analyst</h3>
+                <div class="d-flex justify-content-center mb-4">
+                    <a href="#Portfolio"
+                        class="btn btn-outline-dark bg-white rounded-pill mx-2 ps-3 pe-3 text-dark fw-bold"
+                        style="border-width: 3px; box-shadow: none;">Portfolio</a>
+                    <a href="#Contact" class="btn bg-dark text-white rounded-pill mx-2 ps-3 pe-3 fw-bold">Contact
+                        Info</a>
+
+                </div>
+                <div class="d-flex justify-content-center">
+                    <a href="https://www.linkedin.com/in/ahmedelgezery" class="d-inline-block mx-2" target="_blank">
+                        <i class="fab fa-linkedin" style="font-size: 30px; color: #212529;"></i>
+                    </a>
+                    <a href="https://github.com/AhmedEl-Gezery" class="d-inline-block mx-2" target="_blank">
+                        <i class="fa-brands fa-github" style="font-size: 30px; color: #212529;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About-->
+    <div class="my-4 d-flex justify-content-center flex-column align-items-center bg-light py-5" id="About">
+        <h2 class="text-center mb-4">About Me</h2>
+        <div class="p-3 rounded bg-body-secondary text-center col-md-8 mx-3 mx-sm-0">
+            <p>I am Ahmed Gamal a Data Analyst with expertise in Excel, PowerBI, and Python. I specialize in delivering
+                clear, actionable insights customized to your business needs. If you’re looking for accurate data
+                analysis to drive your projects forward, I’m ready to help.
+            </p>
+            <a href="#Contact" class="btn bg-secondary text-white rounded-pill mx-2 ps-3 pe-3 fw-bold">Contact Info</a>
+        </div>
+    </div>
+
+    <!-- Experience-->
+    <section id="Experience" class="py-5">
+        <div class="container">
+            <h2 class="text-center text-uppercase mb-4">Experience</h2>
+            <div class="row" id="experience-list">
+                <!-- Skills will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio-->
+    <section id="Portfolio" class="container py-5">
+        <h2 class="text-center mb-4">Portfolio</h2>
+        <!-- Add paragraph here -->
+        <p class="text-center text-muted mb-4">It's not about the projects; It's about the story behind them. Visit
+            the project page you're interested in to discover more about the story.</p>
+        <!-- Domains -->
+        <ul class="nav nav-pills justify-content-center mb-4" id="domain-tabs">
+            <!-- <li class="nav-item">
+                <a class="nav-link active" style="cursor: pointer;" data-domain="sales">Sales</a>
+            </li>-->
+            <li class="nav-item">
+                <a class="nav-link active" style="cursor: pointer;" data-domain="hr">HR</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="cursor: pointer;" data-domain="insurance">Insurance</a>
+            </li>
+        </ul>
+        <!-- Projects -->
+        <div id="project-list" class="row justify-content-center">
+            <!-- JavaScript will populate this area -->
+        </div>
+    </section>
+
+    <!-- Contact-->
+    <section id="Contact" class="text-center py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="mb-4">Contact Me</h2>
+            <p class="mb-5">Feel free to reach out to me through LinkedIn</p>
+            <div class="row">
+                <!-- LinkedIn Card -->
+                <div class="">
+                    <div class="card bg-secondary border-light shadow-sm">
+                        <div class="card-body" style=" background-color: white;">
+                            <h5 class="card-title"><i class="fab fa-linkedin"></i> LinkedIn</h5>
+                            <p class="card-text">Connect with me on LinkedIn.</p>
+                            <a href="https://www.linkedin.com/in/ahmedelgezery" class="btn btn-dark" target="_blank">
+                                Visit LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Email Card -->
+                <div class="col-md-6 mb-4" style="display: none;">
+                    <div class="card bg-secondary border-light shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-envelope"></i> Email</h5>
+                            <p class="card-text">Drop me an email for any inquiries or collaboration.</p>
+                            <a id="emailButton" href="" class="btn btn-light">
+                                Send Email
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toast HTML -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast align-items-center text-white bg-primary border-0" role="alert"
+            aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Email Notification</strong>
+                <small>Just now</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                If you experience any issues with the email link, please contact me directly at:
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        //Modal
+        window.onload = function () {
+            setTimeout(function () {
+                var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+                myModal.show();
+            }, 1500); // 3000 milliseconds = 3 seconds
+        };
+
+
+
+
+
+
+        document.getElementById('emailButton').addEventListener('click', function (event) {
+            // Set a timer to show the toast if the mail client doesn't open
+            setTimeout(function () {
+                const liveToast = new bootstrap.Toast(document.getElementById('liveToast'), {
+                    autohide: false // Prevent auto-closing
+                });
+                liveToast.show();
+            }, 1000); // Adjust the delay as needed
+        });
+
+        // Portfolio
+        const projects = {
+            /* sales: [
+                 {
+                     title: "Sales Dashboard",
+                     description: "Soon",
+                     img: "HR Dashboard 1.jpg",
+                     date: "March 2024",
+                     link: "#"
+                 }
+             ],*/
+
+            hr: [
+                {
+                    title: "HR Dashboard",
+                    description: "Tools: Excel, Python(Pandas & NumPy) and Power BI",
+                    img: "./Img/HR_Dashboard_1.png",
+                    date: "Sep 2024",
+                    link: "HR_Dashboard.html"
+                }
+            ],
+            insurance: [
+                {
+                    title: "Medical Insurance Dashboard",
+                    description: "Tools: Excel and Power BI",
+                    img: "./Img/Medical_Insurance_1.png",
+                    date: "Sep 2024",
+                    link: "Medical_Insurance.html"
+                }
+            ]
+        };
+
+        function loadProjects(domain) {
+            const projectList = document.getElementById("project-list");
+            projectList.innerHTML = "";
+
+            projects[domain].forEach(project => {
+                const projectHTML = `
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="${project.img}" class="card-img-top" alt="${project.title}">
+                    <div class="card-body">
+                        <h5 class="card-title">${project.title}</h5>
+                        <p class="card-text">${project.description}</p>
+                        <p class="card-text"><small class="text-muted">${project.date}</small></p>
+                        <a href="${project.link}" class="btn btn-dark">View Project</a>
+                    </div>
+                </div>
+            </div>`;
+                projectList.insertAdjacentHTML("beforeend", projectHTML);
+            });
+        }
+
+        document.querySelectorAll('#domain-tabs .nav-link').forEach(tab => {
+            tab.addEventListener('click', function () {
+                document.querySelector('#domain-tabs .nav-link.active').classList.remove('active');
+                this.classList.add('active');
+                loadProjects(this.getAttribute('data-domain'));
+            });
+        });
+
+        // Load initial domain projects
+        loadProjects('hr');
+
+
+
+
+        // Experience
+        const skills = [
+            { name: "Data Analysis", level: "Advanced", progress: 80, years: "+2" },
+            { name: "Analytical thinking", level: "Advanced", progress: 82, years: "+2" },
+            { name: "Excel", level: "Advanced", progress: 85, years: "+2" },
+            { name: "PowerBi", level: "Proficient", progress: 75, years: "+1.5" },
+            { name: "Python (Pandas & NumPy)", level: "Intermediate", progress: 60, years: 1 },
+            { name: "SQL", level: "Begginer", progress: 50, years: 0 },
+            // Add more skills here
+        ];
+
+        const experienceList = document.getElementById('experience-list');
+
+        skills.forEach(skill => {
+            experienceList.innerHTML += `
+      <div class="col-md-6 mb-4">
+        <div class="experience-item p-4 border border-light rounded">
+          <h4 class="text-black">${skill.name}</h4>
+          <div class="progress mb-3">
+            <div class="progress-bar bg-light text-black" role="progressbar" style="width: ${skill.progress}%;" aria-valuenow="${skill.progress}" aria-valuemin="0" aria-valuemax="100">${skill.level}</div>
+          </div>
+          <p class="text-muted">Years of Experience: ${skill.years} Years</p>
+        </div>
+      </div>
+    `;
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
