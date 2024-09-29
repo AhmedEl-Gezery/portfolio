@@ -44,4 +44,4 @@ actively involved in department projects.
 
 **LinkedIn:** https://www.linkedin.com/in/ahmedelgezery/
 
-**Portfolio:** 
+**Portfolio:** https://ahmedel-gezery.github.io/Portfolio/index.html
